@@ -329,7 +329,7 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "OldUnreal Patch Version [436]",
+        "DisplayName": "OldUnreal Patch Version",
         "Category": "Unreal Tournament 99:stadia_controller",
         "Subcategory": "Server:dns:1",
         "Description": "Sets the OldUnreal patch version to apply to the server. Update the server after changing this setting!",
@@ -339,9 +339,11 @@
         "IsFlagArgument": false,
         "ParamFieldName": "PatchVersion",
         "IncludeInCommandLine": false,
-        "DefaultValue": "436",
+        "DefaultValue": "469d",
         "EnumValues": {
-            "436": "436"
+            "469b": "469b",
+            "469c": "469c",
+            "469d": "469d (Default)"
         }
     },
     {
