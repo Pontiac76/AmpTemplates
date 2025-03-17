@@ -97,7 +97,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "IpServer.UdpServerUplink.DoUplink",
         "IncludeInCommandLine": false,
-        "DefaultValue": "False",
+        "DefaultValue": "True",
         "EnumValues": {
             "False": "False",
             "True": "True"
@@ -341,7 +341,7 @@
         "IncludeInCommandLine": false,
         "DefaultValue": "436",
         "EnumValues": {
-            "469b": "436"
+            "436": "436"
         }
     },
     {
