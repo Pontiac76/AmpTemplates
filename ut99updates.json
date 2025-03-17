@@ -31,49 +31,15 @@
     },
     {
         "UpdateStageName": "OldUnreal Patch Download",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/OldUnreal/UnrealTournamentPatches/releases/download/v{{PatchVersion}}/OldUnreal-UTPatch{{PatchVersion}}-Windows.zip",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "OldUnreal Patch Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/OldUnreal/UnrealTournamentPatches/releases/download/v469b/OldUnreal-UTPatch469b-Linux.tar.bz2",
+        "UpdateSourceData": "https://www.oldunreal.com/patch/unrealtournament/official/ut-server-436.tar.gz",
         "UpdateSourceTarget": "{{$FullRootDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "469b"
-    },
-    {
-        "UpdateStageName": "OldUnreal Patch Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/OldUnreal/UnrealTournamentPatches/releases/download/v469c/OldUnreal-UTPatch469c-Linux-amd64.tar.bz2",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "469c"
-    },
-    {
-        "UpdateStageName": "OldUnreal Patch Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/OldUnreal/UnrealTournamentPatches/releases/download/v469d/OldUnreal-UTPatch469d-Linux-amd64.tar.bz2",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "469d"
+        "UpdateSourceConditionValue": "436"
     },
     {
         "UpdateStageName": "Copy OldUnreal Patch Files",
@@ -82,17 +48,7 @@
         "UpdateSourceData": "/bin/bash",
         "UpdateSourceArgs": "-c \"\\cp -Rf ./ut-server/System64/* ./ut-server/System >/dev/null 2>&1\"",
         "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "469c",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Copy OldUnreal Patch Files",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\cp -Rf ./ut-server/System64/* ./ut-server/System >/dev/null 2>&1\"",
-        "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "469d",
+        "UpdateSourceConditionValue": "436",
         "SkipOnFailure": false
     },
     {
