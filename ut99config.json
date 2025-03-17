@@ -339,11 +339,12 @@
         "IsFlagArgument": false,
         "ParamFieldName": "PatchVersion",
         "IncludeInCommandLine": false,
-        "DefaultValue": "469d",
+        "DefaultValue": "436",
         "EnumValues": {
-            "469b": "469b",
+						"436": "436 (Default)",
+						"469b": "469b",
             "469c": "469c",
-            "469d": "469d (Default)"
+            "469d": "469d"
         }
     },
     {

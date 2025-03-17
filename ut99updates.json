@@ -40,6 +40,18 @@
         "DeleteAfterExtract": true
     },
     {
+				"UpdateStageName": "OldUnreal Patch Download",
+				"UpdateSourcePlatform": "Linux",
+				"UpdateSource": "FetchURL",
+				"UpdateSourceData": "https://www.oldunreal.com/patch/unrealtournament/official/ut-server-436.tar.gz",
+				"UpdateSourceTarget": "{{$FullRootDir}}",
+				"UnzipUpdateSource": true,
+				"OverwriteExistingFiles": true,
+				"DeleteAfterExtract": true,
+				"UpdateSourceConditionSetting": "PatchVersion",
+				"UpdateSourceConditionValue": "436"
+		},
+		{
         "UpdateStageName": "OldUnreal Patch Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
