@@ -97,7 +97,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "IpServer.UdpServerUplink.DoUplink",
         "IncludeInCommandLine": false,
-        "DefaultValue": "True",
+        "DefaultValue": "False",
         "EnumValues": {
             "False": "False",
             "True": "True"
