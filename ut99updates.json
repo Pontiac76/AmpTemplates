@@ -30,24 +30,6 @@
         "DeleteAfterExtract": true
     },
     {
-        "UpdateStageName": "OldUnreal Patch Download",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Pontiac76/AmpTemplates/raw/main/ut-server-436.tar.gz",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true
-    },
-    {
-        "UpdateStageName": "Copy OldUnreal Patch Files",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\cp -Rf ./ut-server/System64/* ./ut-server/System >/dev/null 2>&1\"",
-        "UpdateSourceConditionSetting": "PatchVersion"
-    },
-    {
         "UpdateStageName": "Pause Update Stages",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Pause",
