@@ -33,7 +33,7 @@
         "UpdateStageName": "OldUnreal Patch Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://www.oldunreal.com/patch/unrealtournament/official/ut-server-436.tar.gz",
+        "UpdateSourceData": "https://raw.githubusercontent.com/Pontiac76/AmpTemplates/refs/heads/main/ut-server-436.tar.gz",
         "UpdateSourceTarget": "{{$FullRootDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
