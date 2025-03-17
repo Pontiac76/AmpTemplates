@@ -37,9 +37,7 @@
         "UpdateSourceTarget": "{{$FullRootDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "436"
+        "DeleteAfterExtract": true
     },
     {
         "UpdateStageName": "Copy OldUnreal Patch Files",
@@ -47,9 +45,7 @@
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
         "UpdateSourceArgs": "-c \"\\cp -Rf ./ut-server/System64/* ./ut-server/System >/dev/null 2>&1\"",
-        "UpdateSourceConditionSetting": "PatchVersion",
-        "UpdateSourceConditionValue": "436",
-        "SkipOnFailure": false
+        "UpdateSourceConditionSetting": "PatchVersion"
     },
     {
         "UpdateStageName": "Pause Update Stages",
